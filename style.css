@@ -1,0 +1,294 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.msg {
+    color: #ff00c3;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    animation: message 2s ease-in-out 6.75s forwards;
+}
+
+@keyframes message {
+    0% {
+        opacity: 0;
+        margin-top: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-top: -160px;
+    }
+}
+
+.year {
+    color: white;
+    font-size: 175px;
+    font-weight: 700;
+    letter-spacing: -18px;
+    position: absolute;
+    top: 375px;
+    left: 550px;
+}
+
+.old {
+    position: absolute;
+    top: 0%;
+    animation: old_animation 2s ease-in-out 4.75s forwards;
+}
+
+@keyframes old_animation {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: -400%;
+    }
+}
+
+.first-year {
+    margin-right: 35px;
+}
+
+.new {
+    position: absolute;
+    right: -750px;
+    animation: new_animation 3.5s ease-in-out 3s forwards;
+}
+
+@keyframes new_animation {
+    0% {
+        right: -700PX;
+    }
+    40% {
+        right: -220PX;
+    }
+    90% {
+        right: -220PX;
+    }
+    100% {
+        right: -90px;
+        color: yellow;
+    }
+}
+
+.balloon {
+    width: 100px;
+    height: 120px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -800px;
+    margin-top: -275px;
+    animation: balloon_animation 3.5s ease-in-out 3s forwards;
+}
+
+.balloon::after {
+    content: '';
+    width: 4px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    bottom: -100px;
+}
+
+.balloon::before {
+    content: '';
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent #fd3553;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -10px;
+}
+
+@keyframes balloon_animation {
+    0% {
+        right: -720PX;
+    }
+    40% {
+        right: -220PX;
+    }
+    50% {
+        right: -125PX;
+        top: 50%;
+    }
+    100% {
+        right: -130px;
+        top: -270%;
+    }
+}
+
+.y1 {
+    animation: y1-color 2s ease-in-out 5.75s forwards;
+}
+
+@keyframes y1-color {
+    0% {
+        color: white;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+.y2 {
+    animation: y2-color 2s ease-in-out 5.75s forwards;
+}
+
+@keyframes y2-color {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #4cdde2;
+    }
+}
+
+.y3 {
+    animation: y3-color 2s ease-in-out 5.75s forwards;
+}
+
+@keyframes y3-color {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #ff94a6;
+    }
+}
+
+.firework {
+    position: absolute;
+    opacity: 0;
+    animation: explode 2s ease-in-out 8s forwards infinite;
+}
+
+@keyframes explode {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+    
+}
+
+.cracker {
+    position: absolute;
+    width: 4px;
+    height: 80px;
+}
+
+.cracker::before {
+    content: '';
+    background-color: gold;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    animation: fire 2s ease-in-out infinite;
+}
+
+@keyframes fire {
+    0% {
+        top: 100%;
+    }    
+    25% {
+        top: 50%;
+    }
+    50% {
+        top: -25%;
+    }
+    75% {
+        top: -50%;
+    }
+    100% {
+        top: -50%;
+    }
+}
+
+.cracker:nth-child(1) {
+    transform: rotate(0deg) translateY(-15px);
+}
+.cracker:nth-child(2) {
+    transform: rotate(30deg) translateY(-15px);
+}
+.cracker:nth-child(3) {
+    transform: rotate(60deg) translateY(-15px);
+}
+.cracker:nth-child(4) {
+    transform: rotate(90deg) translateY(-15px);
+}
+.cracker:nth-child(5) {
+    transform: rotate(120deg) translateY(-15px);
+}
+.cracker:nth-child(6) {
+    transform: rotate(150deg) translateY(-15px);
+}
+.cracker:nth-child(7) {
+    transform: rotate(180deg) translateY(-15px);
+}
+.cracker:nth-child(8) {
+    transform: rotate(210deg) translateY(-15px);
+}
+.cracker:nth-child(9) {
+    transform: rotate(240deg) translateY(-15px);
+}
+.cracker:nth-child(10) {
+    transform: rotate(270deg) translateY(-15px);
+}
+.cracker:nth-child(11) {
+    transform: rotate(300deg) translateY(-15px);
+}
+.cracker:nth-child(12) {
+    transform: rotate(330deg) translateY(-15px);
+}
+
+#firework1 {
+    position: absolute;
+    left: 25%;
+    top: 60%;
+    transform: scale(0.5);
+}
+
+#firework2 {
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    transform: scale(0.75);
+}
+
+#firework3 {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: scale(1);
+}
